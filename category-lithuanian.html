@@ -1,0 +1,67 @@
+<div class="bottom-content">
+  <div class="seo-desc">
+    <h2 style="text-align: center">TYTUŁ GŁOWNY</h2>
+    <div class="seo-desc-content" style="text-align: justify; font-size: 80%">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non dignissim lectus, a dictum odio. Sed commodo lectus non sollicitudin posuere. Phasellus sit amet est ut ex dictum semper. Nulla id lacinia risus, ac malesuada diam. Aliquam condimentum eros eu cursus malesuada. 
+<br><br>
+<h2>Nagłówek sekcji</h2>
+Proin ornare turpis lectus, at volutpat sem fringilla vitae. In ultricies, sem feugiat lacinia consequat, erat neque porttitor orci, sit amet pulvinar justo est nec elit. Morbi rhoncus, ex eget aliquet varius, ligula purus volutpat eros, quis faucibus dolor dui quis tellus. Nunc id porta nisi, ac accumsan magna. Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.
+<br><br>
+<h2>Nagłówek sekcji</h2>
+Proin ornare turpis lectus, at volutpat sem fringilla vitae. In ultricies, sem feugiat lacinia consequat, erat neque porttitor orci, sit amet pulvinar justo est nec elit. Morbi rhoncus, ex eget aliquet varius, ligula purus volutpat eros, quis faucibus dolor dui quis tellus. Nunc id porta nisi, ac accumsan magna. Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.
+<h2>Nagłówek sekcji</h2>
+Proin ornare turpis lectus, at volutpat sem fringilla vitae. In ultricies, sem feugiat lacinia consequat, erat neque porttitor orci, sit amet pulvinar justo est nec elit. Morbi rhoncus, ex eget aliquet varius, ligula purus volutpat eros, quis faucibus dolor dui quis tellus. Nunc id porta nisi, ac accumsan magna. Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.
+<br><br>
+<h2>Nagłowek sekcji</h2>
+Proin ornare turpis lectus, at volutpat sem fringilla vitae. In ultricies, sem feugiat lacinia consequat, erat neque porttitor orci, sit amet pulvinar justo est nec elit.  <a href="https://www.bejessa.cz/produkt/naramek-figaro/"><u>Nazwa odnośnika</u></a> Morbi rhoncus, ex eget aliquet varius, ligula purus volutpat eros, quis faucibus dolor dui quis tellus. Nunc id porta nisi, ac accumsan magna. Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.
+<br><br>
+<h2>Nagłowek sekcji</h2>
+Morbi rhoncus, ex eget aliquet varius, ligula purus volutpat eros, quis faucibus dolor dui quis tellus. Nunc id porta nisi, ac accumsan magna.<a href="https://www.bejessa.cz/kategorie/hodinky/"><u>Nazwa odnośnika</u></a>  Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.
+<br><br>
+<h2>Nagłowek sekcji</h2>
+ Etiam ac risus id nulla eleifend sollicitudin. Nunc at mi sed dolor dignissim posuere nec sed nibh. Donec vel dolor urna. Fusce ac quam neque. Morbi ac leo leo. Nunc efficitur ex dignissim vestibulum hendrerit.</div>
+  </div>
+  <div class="more">
+    <button onclick="toggleSeoDesc()">Skaityk daugiau</button>
+  </div>
+</div>
+
+<script>
+  function toggleSeoDesc() {
+    var seoDesc = document.querySelector('.seo-desc');
+    seoDesc.classList.toggle('expanded');
+
+    var moreButton = document.querySelector('.more button');
+    moreButton.textContent = seoDesc.classList.contains('expanded') ? 'Mažiau' : 'Skaityk daugiau';
+  }
+</script>
+
+<style>
+.more{
+display: grid;
+}
+  .seo-desc .seo-desc-content {
+    position: relative;
+    max-height: 9em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    transition: max-height 0.5s ease-out;
+  }
+
+  .seo-desc.expanded .seo-desc-content {
+    max-height: none;
+  }
+
+  .seo-desc .more {
+    position: absolute;
+    bottom: -1.5em;
+    right: 0;
+    background: #f5f5f5;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  .seo-desc.expanded .more button {
+    display: inline-block;
+  }
+</style>
